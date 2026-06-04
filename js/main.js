@@ -43,15 +43,20 @@ $(document).on("click",".ip",()=>{
 	},800);
 });
 
-// Store click tip
-$(document).ready(()=>{
-  $(".item.store").append('<span class="store-tip">未开放</span>');
-  $(document).on("click",".item.store",(e)=>{
-    e.preventDefault();
-    const $tip = $(".item.store .store-tip");
-    $tip.css("opacity", 1);
-    setTimeout(()=> $tip.css("opacity", 0), 1500);
-  });
+// Store modal
+$(document).on("click",".item.store",(e)=>{
+  e.preventDefault();
+  $("#storeModal").css({display:"flex", opacity:0}).animate({opacity:1},200);
+});
+
+$(document).on("click",".modal-close",(e)=>{
+  $("#storeModal").fadeOut(200);
+});
+
+$(document).on("click",".modal-overlay",(e)=>{
+  if ($(e.target).hasClass("modal-overlay")) {
+    $("#storeModal").fadeOut(200);
+  }
 });
 
 // Animated player count
