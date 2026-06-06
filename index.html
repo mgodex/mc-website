@@ -16,6 +16,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+
+	<script src="https://www.tenpay.com/v4/static/js/jquery-1.9.1.min.js
+" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="container">
@@ -37,7 +41,7 @@
 			</a>
 			
 			<!-- Replace # with your forum URL-->
-			<a href="https://play.mc.meng.me" class="item forums">
+			<a href="https://play.mc.meng.me" target=“_blank” class="item forums">
 			<div>
 				<img src="img/vote.png" alt="Minecraft forums icon" class="img">
 				<p class="subtitle">在网页上游玩MC</p>
@@ -67,29 +71,50 @@
 		<div class="modal-content">
 			<span class="modal-close">&times;</span>
 			<div class="modal-body">
-				<h1>绑定教程</h1>
-				<p>请注意，无任何收费，完全免费！请勿上当受骗！</p>
-				<p>步骤如下：</p>
-				<p>1、微信“扫一扫”扫描下方二维码进入“萌灵”小程序（如果您还没有账号，需要先注册一个账号，因为游戏号会和你的微信号绑定，方便您后续管理游戏。）</p>
-				<img src="img/mcWechat.png" alt="微信二维码">
-				<p>2、点击“新增绑定”</p>
-				<p>3、服务器ID输入：4399</p>
-				<p>4、用户名输入：你的游戏账号名字。（就是人物头顶上那个名字）</p>
-				<p>5、点击“确认”按钮。</p>
-				<p>未提示错误信息，即绑定完成！</p>
-				
-				
-				<p class="ps">
-				ps: <br />
-				理论上只需要在“加入游戏”分类下操作，如果您也有服务器使用我们的登录管理，才需要在“管理游戏”中操作。<br />
-				如果您直接进入小程序，页面路径为：“控制台“ -> ”MC面板"</p>
-				
+				<div class="modal-tutorial">
+					<h1>绑定教程</h1>
+					<p>请注意，无任何收费，完全免费！请勿上当受骗！</p>
+					<p>步骤如下：</p>
+					<p>1、微信“扫一扫”扫描下方二维码进入“萌灵”小程序（如果您还没有账号，需要先注册一个账号，因为游戏号会和你的微信号绑定，方便您后续管理游戏。）</p>
+					<img src="img/mcWechat.png" alt="微信二维码">
+					<p>2、点击“新增绑定”</p>
+					<p>3、服务器ID输入：4399</p>
+					<p>4、用户名输入：你的游戏账号名字。（就是人物头顶上那个名字）</p>
+					<p>5、点击“确认”按钮。</p>
+					<p>未提示错误信息，即绑定完成！</p>
+					
+					
+					<p class="ps">
+					ps: <br />
+					理论上只需要在“加入游戏”分类下操作，如果您也有服务器使用我们的登录管理，才需要在“管理游戏”中操作。<br />
+					如果您直接进入小程序，页面路径为：“控制台“ -> ”MC面板"</p>
+					<p class="ps">
+					如果你也是MC服主，也想使用本MOD，请访问：<a href="https://github.com/mgodex/mc-login-verify" target=“_blank” class="item vote">GitHub仓库</a>，我们已开源，欢迎Star！
+					</p>
+				</div>
+				<div class="modal-faq">
+					<h2>常见问题</h2>
+					<ul>
+						<li>
+							<strong>Q: 换电脑了提示被其他设备绑定</strong>
+							<p>为了账号安全，每次进入服务器会自动绑定机器码，更换服务器去小程序“MC面板”中点“换绑”即可正常进入服务器。</p>
+						</li>
+						<li>
+							<strong>Q: 绑定的时候提示用户名存在</strong>
+							<p>本平台用户名是唯一的，如果被占用请更换用户名，无法更换请联系客服处理。</p>
+						</li>
+						<li>
+							<strong>Q: 多个账号可以绑定吗？</strong>
+							<p>可以，只要用户名不重复即可。</p>
+						</li>
+						<li>
+							<strong>Q: 不同服务器需要分开绑定吗？</strong>
+							<p>本程序是开源的，任何MC服主都可以使用，每个服务器都会生成一个ID，所以如果访问不同服务器需要分别绑定自己的账号。</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<script src="https://www.tenpay.com/v4/static/js/jquery-1.9.1.min.js
-" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
